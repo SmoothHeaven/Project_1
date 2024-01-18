@@ -25,7 +25,7 @@ ros2 service call /turtle1/set_pen turtlesim/srv/SetPen  "{'off': 1}"
 ros2 service call /turtle1/teleport_absolute turtlesim/srv/TeleportAbsolute "{x: 7, y: 3, theta: 0.0}"
 
 #Set pen to blue
-ros2 service call /turtle1/set_pen turtlesim/srv/SetPen  "{r: 0, g: 0, b: 255, width: 5, 'off': 0}"
+ros2 service call /turtle1/set_pen turtlesim/srv/SetPen  "{r: 0, g: 255, b: 0, width: 5, 'off': 0}"
 #Draw letter "H"
 
 pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 4.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
