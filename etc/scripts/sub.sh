@@ -15,8 +15,9 @@ sub () {
         read -p "Type the file_name.csv: " file_name
     fi
 
-    
+    #write to file_name.csv without error message
     ros2 topic echo $topic_name --no-arr >> $file_name.csv
+    #write to terminal indicating writing done
     echo "Data wrote to $file_name.csv"
 }
 

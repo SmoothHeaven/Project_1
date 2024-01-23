@@ -1,4 +1,3 @@
-WARNING: topic [/turtle1/cmd_vel] does not appear to be published yet
 linear:
   x: -1.5
   y: 0.0
